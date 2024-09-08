@@ -24,7 +24,7 @@ class ImageResize:
                 "action": ([s.ACTION_TYPE_RESIZE, s.ACTION_TYPE_CROP, s.ACTION_TYPE_PAD],),
                 "smaller_side": ("INT", {"default": 0, "min": 0, "max": 8192, "step": 8}),
                 "larger_side": ("INT", {"default": 0, "min": 0, "max": 8192, "step": 8}),
-                "scale_factor": ("FLOAT", {"default": 0.0, "min": 0.0, "max": 10.0, "step": 0.1}),
+                "scale_factor": ("FLOAT", {"default": 0.0, "min": 0.0, "max": 10.0, "step": 0.001}),
                 "resize_mode": ([s.RESIZE_MODE_DOWNSCALE, s.RESIZE_MODE_UPSCALE, s.RESIZE_MODE_ANY],),
                 "side_ratio": ("STRING", {"default": "4:3"}),
                 "crop_pad_position": ("FLOAT", {"default": 0.5, "min": 0.0, "max": 1.0, "step": 0.01}),
